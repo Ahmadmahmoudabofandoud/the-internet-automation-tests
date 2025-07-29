@@ -1,71 +1,79 @@
-🌐 The Internet – UI Test Automation
-This repository contains automated UI test scripts for The Internet, a popular practice site for test automation.
+# The Internet – UI Test Automation
 
-The tests are written in Java using Selenium WebDriver, following the Page Object Model (POM) design pattern and executed with TestNG.
+This repository contains automated UI test scripts for [The Internet](http://the-internet.herokuapp.com), a popular practice site for test automation.
+The tests are written in **Java** using **Selenium WebDriver**, following the **Page Object Model (POM)** design pattern and executed with **TestNG**.
 
-🛠 Tech Stack
-Language: Java
+## 🛠 Tech Stack
 
-Automation Tool: Selenium WebDriver
+* **Language**: Java
+* **Automation Tool**: Selenium WebDriver
+* **Test Framework**: TestNG
+* **Design Pattern**: Page Object Model (POM)
+* **Build Tool**: Maven
 
-Test Framework: TestNG
+## 📂 Project Structure
 
-Design Pattern: Page Object Model (POM)
-
-Build Tool: Maven
-
-📁 Project Structure
-bash
-Copy
-Edit
+```
 src
 ├── main
 │   └── java
-│       └── pages           # Page Object classes
+│       └── pages          # Page Object classes
 ├── test
 │   └── java
-│       └── tests           # Test classes
-└── resources               # Test data, config files, etc.
-✅ Features Covered
-🔐 Form Authentication
+│       └── tests          # Test classes
+└── resources              # Test data, config files, etc.
+```
 
-🔽 Dropdown Menu
+## ✅ Features Covered
 
-🔁 Dynamic Content
+## ✅ Features Covered
 
-📤 File Upload
+| #  | Feature Name               |
+|----|----------------------------|
+| 1  | Context Menu              |
+| 2  | Dynamic Loading           |
+| 3  | Dropdown menu             |
+| 4  | Entry Ad (Modal popup)    |
+| 5  | File upload               |
+| 6  | Form Authentication       |
+| 7  | Forgot Password           |
+| 8  | Frames                    |
+| 9  | Horizontal Slider         |
+| 10 | Infinite Scroll           |
+| 11 | JavaScript Alerts         |
+| 12 | Key Presses               |
+| 13 | Large & Deep DOM          |
+| 14 | Mouse hovers              |
+| 15 | Multiple Windows          |
 
-⚠️ Alerts and Popups
 
-👆 Mouse Hovers
+## 🚀 How to Run Tests
 
-🧪 Other Components
+1. **Clone the repository**:
 
-🚀 How to Run Tests
-Clone the Repository
+   ```bash
+   git clone https://github.com/your-username/the-internet-automation-tests.git
+   ```
 
-bash
-Copy
-Edit
-git clone https://github.com/your-username/the-internet-automation-tests.git
-Navigate to the Project Directory
+2. **Navigate to the project directory**:
 
-bash
-Copy
-Edit
-cd the-internet-automation-tests
-Run the Tests with Maven
+   ```bash
+   cd the-internet-automation-tests
+   ```
 
-bash
-Copy
-Edit
-mvn clean test
-🔧 Make sure you have Java and Maven properly installed and configured in your system.
+3. **Run the tests with Maven**:
 
-📸 Sample Screenshot (Optional)
-(You can add a screenshot or GIF here showing a test run in action.)
+   ```bash
+   mvn clean test
+   ```
 
-📄 License
-This project is created for educational and demonstration purposes.
-🔓 No license required.
+> ✅ Ensure you have Java and Maven installed and properly configured.
 
+
+## 📄 License
+
+This project is for educational/demo purposes only. No license required.
+
+---
+
+**Author:** Ahmed Mahmoud Abo Fandoud.
