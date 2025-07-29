@@ -1,59 +1,71 @@
-# The Internet – UI Test Automation
+🌐 The Internet – UI Test Automation
+This repository contains automated UI test scripts for The Internet, a popular practice site for test automation.
 
-This repository contains automated UI test scripts for [The Internet](http://the-internet.herokuapp.com), a popular practice site for test automation.  
-The tests are written in **Java** using **Selenium WebDriver**, following the **Page Object Model (POM)** design pattern and executed with **TestNG**.
+The tests are written in Java using Selenium WebDriver, following the Page Object Model (POM) design pattern and executed with TestNG.
 
-## 🛠 Tech Stack
-- **Language**: Java
-- **Automation Tool**: Selenium WebDriver
-- **Test Framework**: TestNG
-- **Design Pattern**: Page Object Model (POM)
-- **Build Tool**: Maven
+🛠 Tech Stack
+Language: Java
 
-## 📂 Project Structure
-src
-├── main
-│ └── java
-│ └── pages # Page Object classes
-├── test
-│ └── java
-│ └── tests # Test classes
-└── resources # Test data, config files, etc.
+Automation Tool: Selenium WebDriver
 
-markdown
+Test Framework: TestNG
+
+Design Pattern: Page Object Model (POM)
+
+Build Tool: Maven
+
+📁 Project Structure
+bash
 Copy
 Edit
+src
+├── main
+│   └── java
+│       └── pages           # Page Object classes
+├── test
+│   └── java
+│       └── tests           # Test classes
+└── resources               # Test data, config files, etc.
+✅ Features Covered
+🔐 Form Authentication
 
-## ✅ Features Covered
-- 🔐 Form Authentication
-- 🔽 Dropdown menu
-- 🔁 Dynamic content
-- 📤 File upload
-- ⚠️ Alerts and popups
-- 👆 Mouse hovers
-- 🧪 Others...
+🔽 Dropdown Menu
 
-## 🚀 How to Run Tests
+🔁 Dynamic Content
 
-1. **Clone the repository**:
-   ```bash
-   git clone https://github.com/your-username/the-internet-automation-tests.git
-Navigate to the project directory:
+📤 File Upload
+
+⚠️ Alerts and Popups
+
+👆 Mouse Hovers
+
+🧪 Other Components
+
+🚀 How to Run Tests
+Clone the Repository
+
+bash
+Copy
+Edit
+git clone https://github.com/your-username/the-internet-automation-tests.git
+Navigate to the Project Directory
 
 bash
 Copy
 Edit
 cd the-internet-automation-tests
-Run the tests with Maven:
+Run the Tests with Maven
 
 bash
 Copy
 Edit
 mvn clean test
-Ensure you have Java and Maven installed and configured in your system.
+🔧 Make sure you have Java and Maven properly installed and configured in your system.
 
 📸 Sample Screenshot (Optional)
+(You can add a screenshot or GIF here showing a test run in action.)
 
 📄 License
-This project is for educational/demo purposes. No license required.
+This project is created for educational and demonstration purposes.
+🔓 No license required.
 
