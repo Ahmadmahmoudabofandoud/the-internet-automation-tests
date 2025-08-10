@@ -12,7 +12,7 @@ import static org.testng.Assert.*;
 public class LoginTests extends BaseTests {
     @Test
     public void testSuccessfulLogin(){
-        LoginPage loginPage =homePage.clickOnFormFormAuthentication();
+        LoginPage loginPage =homePage.clickOnFormAuthentication();
         loginPage.setUsernameField("tomsmith");
         loginPage.setPasswordField("SuperSecretPassword!");
         SecureArea secureArea =loginPage.clickOnLoginButton();

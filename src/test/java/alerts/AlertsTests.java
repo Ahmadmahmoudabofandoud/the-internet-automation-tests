@@ -10,14 +10,14 @@ import static org.testng.Assert.assertEquals;
 public class AlertsTests extends BaseTests {
     @Test
     public void testAcceptAlert() {
-        JavaScriptAlertsPage javaScriptAlertsPage = this.homePage.ClickOnJavaScriptAlerts();
+        JavaScriptAlertsPage javaScriptAlertsPage = this.homePage.clickOnJavaScriptAlerts();
         javaScriptAlertsPage.clickOnAlertTriggerButton();
         javaScriptAlertsPage.alert_clickToAccept();
         assertEquals(javaScriptAlertsPage.getResultText(), "You successfully clicked an alert", "The Text Is inCorrect");
     }
     @Test
     public void testDismissAlert() {
-        var javaScriptAlertsPage = homePage.ClickOnJavaScriptAlerts();
+        var javaScriptAlertsPage = homePage.clickOnJavaScriptAlerts();
         javaScriptAlertsPage.clickOnConfirmTriggerButton();
         String confirmText = javaScriptAlertsPage.alert_getTest();
         javaScriptAlertsPage.alert_clickToDismiss();
@@ -27,7 +27,7 @@ public class AlertsTests extends BaseTests {
 
     @Test
     public void testPrompt() {
-        var jsAlertPage = homePage.ClickOnJavaScriptAlerts();
+        var jsAlertPage = homePage.clickOnJavaScriptAlerts();
         jsAlertPage.clickOnPromptTriggerButton();
         jsAlertPage.alert_setTest("Route");
         jsAlertPage.alert_clickToAccept();
