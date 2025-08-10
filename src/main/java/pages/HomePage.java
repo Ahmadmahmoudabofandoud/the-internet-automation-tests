@@ -37,17 +37,19 @@ public class HomePage {
     }
 
     // (4) Broken Images
-    public BrokenImagesPage clickOnbrokenImagesPage(){
+    public BrokenImagesPage clickOnbrokenImagesPage() {
         clickLink("Broken Images");
         return new BrokenImagesPage(driver);
     }
+
     // (5) Challenging DOM
     public ChallengingDOMPage clickOnChallengingDOMPage() {
         clickLink("Challenging DOM");
         return new ChallengingDOMPage(driver);
     }
+
     // (6) Checkboxes
-    public CheckboxesPage clickOncheckboxesPage(){
+    public CheckboxesPage clickOncheckboxesPage() {
         clickLink("Checkboxes");
         return new CheckboxesPage(driver);
     }
@@ -64,8 +66,17 @@ public class HomePage {
         return new DigestAuthPage(driver);
     }
 
-    // (9) Disappearing Elements - Not implemented yet
+    // (9) Disappearing Elements
+    public DisappearingElementsPage clickOnDisappearingElements() {
+        clickLink("Disappearing Elements");
+        return new DisappearingElementsPage(driver);
+    }
+
     // (10) Drag and Drop - Not implemented yet
+    public DragandDropPage clickOndragandDropPage() {
+        clickLink("Drag and Drop");
+        return new DragandDropPage(driver);
+    }
 
     // (11) Dropdown
     public DropDownPage clickOnDropdown() {
@@ -73,8 +84,17 @@ public class HomePage {
         return new DropDownPage(driver);
     }
 
-    // (12) Dynamic Content - Not implemented yet
-    // (13) Dynamic Controls - Not implemented yet
+    // (12) Dynamic Content
+    public DynamicContentPage clickOnDynamicContentPage() {
+        clickLink("Dynamic Content");
+        return new DynamicContentPage(driver);
+    }
+
+    // (13) Dynamic Controls
+    public DynamicControlsPage clickOndynamicControlsPage() {
+        clickLink("Dynamic Controls");
+        return new DynamicControlsPage(driver);
+    }
 
     // (14) Dynamic Loading
     public DynamicLoadingPage clickDynamicLoadingLink() {
@@ -88,8 +108,13 @@ public class HomePage {
         return new ModelsPage(driver);
     }
 
-    // (16) Exit Intent - Not implemented yet
-    // (17) File Download - Not implemented yet
+    // (16) Exit Intent
+
+    // (17) File Download
+    public FileDownloadPage clickOmfileDownloadPage() {
+        clickLink("File Download");
+        return new FileDownloadPage(driver);
+    }
 
     // (18) File Upload
     public FileUploadPage clickOnFileUpload() {
@@ -97,7 +122,11 @@ public class HomePage {
         return new FileUploadPage(driver);
     }
 
-    // (19) Floating Menu - Not implemented yet
+    // (19) Floating Menu
+    public FloatingMenuPage clickOnfloatingMenuPage() {
+        clickLink("Floating Menu");
+        return new FloatingMenuPage(driver);
+    }
 
     // (20) Forgot Password
     public ForgotPasswordPage clickForgotPasswordLink() {
@@ -117,7 +146,11 @@ public class HomePage {
         return new FramesPage(driver);
     }
 
-    // (23) Geolocation - Not implemented yet
+    // (23) Geolocation
+    public GeolocationPage clickOnGeolocationPage() {
+        clickLink("Geolocation");
+        return new GeolocationPage(driver);
+    }
 
     // (24) Horizontal Slider
     public SliderPage clickSliderLink() {
@@ -137,8 +170,17 @@ public class HomePage {
         return new InfiniteScrollPage(driver);
     }
 
-    // (27) Inputs - Not implemented yet
-    // (28) JQuery UI Menus - Not implemented yet
+    // (27) Inputs
+    public InputsPage clickOninputsPage() {
+        clickLink("Inputs");
+        return new InputsPage(driver);
+    }
+
+    // (28) JQuery UI Menus
+    public JQueryUIMenusPage clickOnjQueryUIMenusPage() {
+        clickLink("JQuery UI Menus");
+        return new JQueryUIMenusPage(driver);
+    }
 
     // (29) JavaScript Alerts
     public JavaScriptAlertsPage clickOnJavaScriptAlerts() {
@@ -146,7 +188,11 @@ public class HomePage {
         return new JavaScriptAlertsPage(driver);
     }
 
-    // (30) JavaScript onload event error - Not implemented yet
+    // (30) JavaScript onload event error
+    public JavaScriptErrorPage clickOnJavaScriptErrorPage() {
+        clickLink("JavaScript onload event error");
+        return new JavaScriptErrorPage(driver);
+    }
 
     // (31) Key Presses
     public KeyPressesPage clickOnKeyPresses() {
@@ -166,15 +212,56 @@ public class HomePage {
         return new MultipleWindowsPage(driver);
     }
 
-    // (34) Nested Frames - Not implemented yet
-    // (35) Notification Messages - Not implemented yet
-    // (36) Redirect Link - Not implemented yet
-    // (37) Secure File Download - Not implemented yet
-    // (38) Shadow DOM - Not implemented yet
-    // (39) Shifting Content - Not implemented yet
-    // (40) Slow Resources - Not implemented yet
-    // (41) Sortable Data Tables - Not implemented yet
-    // (42) Status Codes - Not implemented yet
-    // (43) Typos - Not implemented yet
-    // (44) WYSIWYG Editor - Not implemented yet
+    // (35) Notification Messages
+    public NotificationMessagesPage clickOnnotificationMessagesPage() {
+        clickLink("Notification Messages");
+        return new NotificationMessagesPage(driver);
+    }
+
+    // (36) Redirect Link
+    public RedirectLinkPage clickOnredirectLinkPage() {
+        clickLink("Redirect Link");
+        return new RedirectLinkPage(driver);
+    }
+
+    // (37) Secure File Download
+    public FileDownloadSecurePage clickOnFileDownloadSecurePage() {
+        // فتح الصفحة مباشرة مع Basic Authentication
+        driver.get("https://admin:admin@the-internet.herokuapp.com/download_secure");
+        return new FileDownloadSecurePage(driver);
+    }
+
+    // (38) Shadow DOM
+    // (39) Shifting Content
+    public ShiftingContentPage clickOnshiftingContentPage() {
+        clickLink("Shifting Content");
+        return new ShiftingContentPage(driver);
+    }
+
+    // (40) Slow Resources
+    public SlowResourcesPage clickOnSlowResources() {
+        clickLink("Slow Resources");
+        return new SlowResourcesPage(driver);
+    }
+
+    // (41) Sortable Data Tables
+    public SortableDataTablesPage clickOnsortableDataTablesPage() {
+        clickLink("Sortable Data Tables");
+        return new SortableDataTablesPage(driver);
+    }
+
+    // (42) Status Codes
+    public StatusCodesPage clickOnstatusCodesPage() {
+        clickLink("Status Codes");
+        return new StatusCodesPage(driver);
+    }
+
+    // (43) Typos
+    public TyposPage clickOnTypos() {
+        clickLink("Typos");
+        return new TyposPage(driver);
+    }
+
+
+
 }
