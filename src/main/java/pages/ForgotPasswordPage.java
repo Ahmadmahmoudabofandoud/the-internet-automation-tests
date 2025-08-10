@@ -4,24 +4,23 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
 public class ForgotPasswordPage {
-    WebDriver driver;
-    private final By emailFieldLocator = By.id("email");
-    private final By retrieveButtonLocator = By.id("form_submit");
+    private WebDriver driver;
+    private By emailField=By.id("email");
+    private By recivePasswordButton=By.id("form_submit");
+    private By errorMsg=By.xpath("/html/body/h1");
 
-    ForgotPasswordPage(WebDriver driver)
-    {
-        this.driver = driver;
+    public ForgotPasswordPage(WebDriver driver){
+        this.driver=driver;
     }
 
-    public void fillEmailField(String email)
-    {
-        driver.findElement(emailFieldLocator).sendKeys(email);
+    public void enterEmail(String mail){
+        driver.findElement(emailField).sendKeys(mail);
+    }
+    public void clickRecivePasswordButton(){
+        driver.findElement(recivePasswordButton).click();
+    }
+    public boolean checkErrorMsgContent(){
+        return driver.findElement(errorMsg).getText().contains("Internal Server Error");
     }
 
-    public EmailSentPage clickRetrievePasswordButton()
-    {
-        driver.findElement(retrieveButtonLocator).click();
-
-        return new EmailSentPage(driver);
-    }
 }

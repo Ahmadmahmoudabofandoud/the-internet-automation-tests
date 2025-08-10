@@ -11,7 +11,7 @@ public class FramesTests extends BaseTests {
     public void testFrames() {
         var framesPage = homePage.clickFrames();
         var nestedFramesPage = framesPage.clickNestedFramesLink();
-        assertEquals(nestedFramesPage.getLeftFrameText(),"Left", "The Text is incorrect");
-        assertEquals(nestedFramesPage.getBottomFrameText(),"Bottom", "The Text is incorrect");
+        assertEquals(nestedFramesPage.getLeftFrameText(),"LEFT", "The Text is incorrect");
+        assertEquals(nestedFramesPage.getBottomFrameText(),"BOTTOM", "The Text is incorrect");
     }
 }
