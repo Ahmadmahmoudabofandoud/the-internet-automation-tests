@@ -1,5 +1,5 @@
 
-🚀 **The Internet – UI Test Automation Suite**  
+# 🚀 **The Internet – UI Test Automation Suite**  
 Comprehensive Selenium WebDriver solution for automating The Internet practice platform.
 
 ✔ 44+ Test Scenarios  
