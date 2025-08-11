@@ -54,10 +54,5 @@ Open-source for learning purposes.
 
 Authored with ❤️ by \[Ahmed Mahmoud Abo Fandoud]
 
-🔍 **Need Enhancements?**
-Let me know if you want to:
 
-* Add badges (CI, coverage)
-* Include dependency snippets
-* Customize the tone further
 
